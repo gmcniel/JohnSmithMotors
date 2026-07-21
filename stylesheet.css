@@ -1,0 +1,63 @@
+body {
+            background-color: #78866B; /* Camouflage Green */
+    color: white;
+        }
+        .menu {
+            position: fixed;
+            top: 0;
+            left:-250px;
+            width: 250px;
+            height: 100%;
+            background: #ffffff;
+            transition: 0.3s;
+            padding-top: 60px; /* Pushes links down so they don't sit under the button */
+            box-sizing: border-box;
+        }
+        /* Style for the links inside the menu */
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu ul li {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            font-size : 18px;
+        }
+        .menu ul li a:hover {
+            background-color: #444;
+        }
+        /* Class added by Javascript to slide the menu into view */
+        .menu.open {
+            left: 0;
+        }
+        /* Button styling to keep it visible and clickable */
+        #menu-toggle {
+            font-size: 30px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            z-index: 1000; /* Keeps the button on top of the menu */
+        }
+        <body>
+<button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <nav id="menu" class="hidden">
+        <div id="sideMenu" class="menu">
+            <ul>
+                 <li><a href="About.html">About</a></li>
+                <li><a href="ProductsBakery.html">Products</a></li>
+                <li><a href="ContactBakery.html">Contact</a></li>
+                <li><a href="index2.html">Home</a></li>
+            </ul>
+        </div>
+        </nav>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const sideMenu = document.getElementById('sideMenu');
+        menuToggle.onclick = function() {
+            sideMenu.classList.toggle('open');
+        };
+    </script>
