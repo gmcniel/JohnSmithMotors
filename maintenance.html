@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--&copy; 2026 Geoffrey McNiel. All rights reserved.-->
+        <title>John Smith Motors&trade;</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <style>
+        body {
+            background-color: #ffffff; /* White */
+    color: #333; /* Dark gray */
+        }
+        .menu {
+            position: fixed;
+            top: 0;
+            left:-250px;
+            width: 250px;
+            height: 100%;
+            background: #ffffff;
+            transition: 0.3s;
+            padding-top: 60px; /* Pushes links down so they don't sit under the button */
+            box-sizing: border-box;
+        }
+        /* Style for the links inside the menu */
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu ul li {
+            display: block;
+            padding: 15px 20px;
+            color: #333; /* Dark gray */
+            text-decoration: none;
+            font-size : 18px;
+        }
+        .menu ul li a:hover {
+            background-color: #dbd5d500;
+        }
+        /* Class added by Javascript to slide the menu into view */
+        .menu.open {
+            left: 0;
+        }
+        /* Button styling to keep it visible and clickable */
+        #menu-toggle {
+            font-size: 30px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            z-index: 1000; /* Keeps the button on top of the menu */
+        }
+    </style>
+    </head>
+    <body>
+        <hr><h1 style="font-size: 40px !important; font-weight: bold; text-align: center;">
+            John Smith Motors
+            </h1></hr>
+            <img src="stock photo car dealership.jpg" alt="Car Dealership stock photo" style="display: block; margin: 20px auto;">
+        <h1><b>Maintenance</b></h1>
+        <p>At John Smith Motors, we take car of your vehicle and will perform maintenance services free of charge to vehicles that are under our warranties.<br>
+        For vehicles that are outside of the warranty, see our services pricing below.</p>
+        <table>
+            <th>Oil changes: $35.99</th><tr></tr>
+            <th>Tire patching: $19.99 per axel</th><tr></tr>
+            <th>Tire change: $119.99 per tire</th><tr></tr>
+            <th>Tire depth checker: $0.00</th><tr></tr>
+            <th>Windshield replacement: $100.00</th><tr></tr>
+            <th>Brake work: $119.99 per axel</th><tr></tr>
+            <th>All other services? Contact us</th><tr></tr>
+        </table>
+        
+    </body>
+</html>
