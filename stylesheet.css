@@ -1,5 +1,5 @@
 body {
-            background-color: #78866B; /* Camouflage Green */
+            background-color: white; /* White */
     color: white;
         }
         .menu {
@@ -8,7 +8,7 @@ body {
             left:-250px;
             width: 250px;
             height: 100%;
-            background: #ffffff;
+            background: white;
             transition: 0.3s;
             padding-top: 60px; /* Pushes links down so they don't sit under the button */
             box-sizing: border-box;
@@ -27,7 +27,7 @@ body {
             font-size : 18px;
         }
         .menu ul li a:hover {
-            background-color: #444;
+            background-color: gray;
         }
         /* Class added by Javascript to slide the menu into view */
         .menu.open {
@@ -47,10 +47,10 @@ body {
     <nav id="menu" class="hidden">
         <div id="sideMenu" class="menu">
             <ul>
-                 <li><a href="About.html">About</a></li>
-                <li><a href="ProductsBakery.html">Products</a></li>
-                <li><a href="ContactBakery.html">Contact</a></li>
-                <li><a href="index2.html">Home</a></li>
+                 <li><a href="index.html">John Smith Motors</a></li>
+                <li><a href="Used-cars.html">Used Cars</a></li>
+                <li><a href="New-cars.html">New Cars</a></li>
+                <li><a href="warranties.html">Warranties</a></li>
             </ul>
         </div>
         </nav>
